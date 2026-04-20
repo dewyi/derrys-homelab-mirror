@@ -43,3 +43,6 @@ terraform.rc
 # Environment files
 .env
 
+# Opencode
+.opencode
+AGENTS.md
