@@ -42,8 +42,7 @@ terraform.rc
 
 # Environment files
 # Ignore all .env files
-.env
-.env.*
+*.env
 # But allow stack.env
 !stack.env
 
