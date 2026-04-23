@@ -1,8 +1,8 @@
 services:
   openwebui:
     image: ghcr.io/open-webui/open-webui:main-slim
-#    env_file:
-#      - .env
+    env_file:
+      - stack.env
     ports:
       - "5090:8080"
     volumes:
