@@ -7,8 +7,6 @@ services:
       - "5090:8080"
     volumes:
       - open-webui:/app/backend/data
-    depends:
-      - core
 
   core:
     container_name: searxng-core
