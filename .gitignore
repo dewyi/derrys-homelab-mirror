@@ -41,7 +41,11 @@ override.tf.json
 terraform.rc
 
 # Environment files
+# Ignore all .env files
 .env
+.env.*
+# But allow stack.env
+!stack.env
 
 # Opencode
 .opencode
