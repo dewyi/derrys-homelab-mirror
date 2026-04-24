@@ -13,7 +13,8 @@ services:
       - 22000:22000/udp
       - 21027:21027/udp
     volumes:
-      - /data/syncthing/:/data/
+      - /data/syncthing/data:/data
+      - /data/syncthing/config/config
     restart: unless-stopped
     healthcheck:
       test: curl -fkLsS -m 2 127.0.0.1:8384/rest/noauth/health | grep -o --color=never OK || exit 1
