@@ -11,7 +11,7 @@ services:
       ENABLE_WEB_SEARCH: True
       WEB_SEARCH_ENGINE: "searxng"
       WEB_SEARCH_RESULT_COUNT: 3
-      WEB_SEARCH_CONCURRENT_REQUESTS: 10
+      WEB_SEARCH_CONCURRENT_REQUESTS: 1
       SEARXNG_QUERY_URL: "http://searxng-core:8080/search?q=<query>"
 
   core:
